@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { ContactListItem } from 'components/ContactListItem/ContactListItem';
 import { List } from './ContactList.styled';
 
-export function ContactList({ contacts, removeItem }) {
+export default function ContactList({ contacts, removeItem }) {
   return (
     <List>
       {contacts.map(({ id, name, number }) => {

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FilterContainer, Label, Span } from './Filter.styled';
 import { Input } from 'components/ContactForm/ContactForm.styled';
 
-export function Filter({ value, onFilter }) {
+export const Filter = ({ value, onFilter }) => {
   return (
     <FilterContainer>
       <Label>
@@ -17,7 +17,7 @@ export function Filter({ value, onFilter }) {
       </Label>
     </FilterContainer>
   );
-}
+};
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
